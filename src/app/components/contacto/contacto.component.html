@@ -1,0 +1,8 @@
+
+
+
+<input type ="number" name = "numero" [(ngModel)]="user.numeros">
+
+<p>{{user.numeros}}</p>
+<p *ngIf ="user.numeros>=0; else negativo">positvio</p> 
+<ng-template #negativo><p>negativo</p></ng-template>

@@ -1,0 +1,369 @@
+*{
+    margin: 1px;
+    padding: 5px;
+
+}
+
+body{
+    text-align: center;
+}
+#agrupar{
+    width: 100%;
+    margin: 15px auto;
+    text-align: left;
+
+}
+#cabe{
+background: #FFFBB9;
+border: 4px solid #999999;
+padding: 13px;
+}
+#menu{
+    background: #CCCCCC;
+    padding: 5px 15px;
+
+}
+#menu li{
+    display: inline-block;
+    list-style: none;
+    padding: 5px;
+    font: bold 14px verdana, sans-serif;
+
+}
+#alfa{
+    font-size: 110%;
+}
+#seccion{
+    text-align: left;
+    width: 73%; 
+    font-size: 158%;
+    margin: 10px;
+    margin-top: auto;
+    font-family: serif;
+    background-color: rosybrown;
+    padding: 1%;
+    border-top:crimson 10px solid;
+  border-bottom: blue 10px solid;
+  border-left: red 5px solid;
+  border-right: springgreen 5px solid;
+}
+#caracol{
+    text-align: left;
+    width: 73%; 
+    font-size: 158%;
+    margin-top: auto;
+    font-family: serif;
+    background-color:whitesmoke;
+    padding: 1%;
+    border-top:crimson 10px solid;
+  border-bottom: blue 10px solid;
+  border-left: red 5px solid;
+  border-right: springgreen 5px solid;
+  margin: 9px;
+}
+#colum{
+    float:right;
+    width: 20%;
+    margin: 20px 0px;
+    padding: 20px;
+    background: #CCCCCC;
+   
+}
+blockquote{
+    font-size: 150%;
+}
+#perro{
+    font-size: 110%;
+}
+#op{
+    text-align: center;
+}
+#datos{
+   
+  position: relative;
+ top: 200px;
+   
+}
+
+
+#apellido{
+    
+    position: absolute;
+    left : 100px;
+    top  : 300px;
+    border-top:crimson 10px solid;
+    border-bottom: blue 10px solid;
+    border-left: red 5px solid;
+    border-right: springgreen 5px solid;
+}
+#Nombrep{
+    position: absolute;
+  left : 100px;
+  top  : 250px;
+  border-top:crimson 10px solid;
+  border-bottom: blue 10px solid;
+  border-left: red 5px solid;
+  border-right: springgreen 5px solid;
+}
+#Edad{
+    position: absolute;
+  left : 120px;
+  top  : 350px;
+  border-top:crimson 10px solid;
+  border-bottom: blue 10px solid;
+  border-left: red 5px solid;
+  border-right: springgreen 5px solid;
+   
+}
+#Algebra{
+    position:absolute;
+    right: 500px;
+    top: 250px;
+    border-top:crimson 10px solid;
+    border-bottom: blue 10px solid;
+    border-left: red 5px solid;
+    border-right: springgreen 5px solid;
+}
+#Quimica{
+    position:absolute;
+    right: 500px;
+    top: 300px;
+    border-top:crimson 10px solid;
+    border-bottom: blue 10px solid;
+    border-left: red 5px solid;
+    border-right: springgreen 5px solid;
+}
+#Fisica{
+    position:absolute;
+    right: 500px;
+    top: 350px;
+    border-top:crimson 10px solid;
+    border-bottom: blue 10px solid;
+    border-left: red 5px solid;
+    border-right: springgreen 5px solid;
+}
+
+#Nombre1{
+    position:absolute;
+    left: 200px;
+    top: 500px;
+    border-top:yellow 10px solid;
+    border-bottom: blue solid;
+    border-left:5px red solid;
+    border-right:red 5px solid;
+
+}
+#apellido1{
+    position:absolute;
+    left: 200px;
+    top: 540px;
+    border-top:yellow 10px solid;
+    border-bottom: blue solid;
+    border-left:5px red solid;
+    border-right:red 5px solid;
+}
+#edad1{
+    position:absolute;
+    left: 200px;
+    top: 590px;
+    border-top:yellow 10px solid;
+    border-bottom: blue solid;
+    border-left:5px red solid;
+    border-right:red 5px solid;
+}
+#algebra1{
+    position:absolute;
+    right: 500px;
+    top: 490px;
+    border-top:yellow 10px solid;
+    border-bottom: blue solid;
+    border-left:5px red solid;
+    border-right:red 5px solid;
+}
+#Quimica1{
+    position:absolute;
+    right: 500px;
+    top: 530px;
+    border-top:yellow 10px solid;
+    border-bottom: blue solid;
+    border-left:5px red solid;
+    border-right:red 5px solid;
+}
+#fisica1{
+    position:absolute;
+    right: 500px;
+    top: 580px;
+    border-top:yellow 10px solid;
+    border-bottom: blue solid;
+    border-left:5px red solid;
+    border-right:red 5px solid;
+}
+#tanteo{
+    position:absolute;
+    right: 500px;
+    top: 640px;
+    border-top:yellow 10px solid;
+    border-bottom: blue solid;
+    border-left:5px red solid;
+    border-right:red 5px solid;
+}
+
+#pie{
+     
+   
+     width: 1324px;
+   bottom: -100%;
+    clear: both;
+    background: #286af0;
+    text-align: center;
+    color: #fff;
+    height: 30px;
+    position: absolute;
+    
+
+}
+article{
+    background: #FFFBCC;
+    border: 1px solid #999999;
+    padding: 20px;
+    margin-bottom: 15px;
+
+}
+#video{
+    float:right;
+    width: 20%;
+    margin: 20px 0px;
+    padding: 20px;
+    background: salmon;
+    height: 500px;
+}
+
+
+#menuf{
+    position:absolute;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 50px 0px 35px 0px;
+    -moz-border-radius: 35px 0px 35px 0px;
+    -webkit-border-radius: 35px 0px 35px 0px;
+    border: 2px solid darkblue;
+    background-color: cadetblue;
+    font-family: sans-serif;
+    color: #ffffff;
+   
+    left: 100px;
+    top: 200px;
+    font-size: 26px;
+    
+}
+
+
+#menuS{
+    position:absolute;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 50px 0px 35px 0px;
+    -moz-border-radius: 35px 0px 35px 0px;
+    -webkit-border-radius: 35px 0px 35px 0px;
+    border: 2px solid #ffffff;
+    background-color: cadetblue;
+    font-family: sans-serif;
+    color: #ffffff;
+    left: 100px;
+    top: 250px;
+    font-size: 28px;
+}
+#Detergentemenu{
+    position:absolute;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 50px 0px 35px 0px;
+    -moz-border-radius: 35px 0px 35px 0px;
+    -webkit-border-radius: 35px 0px 35px 0px;
+    border: 2px solid #ffffff;
+    background-color: cadetblue;
+    font-family: sans-serif;
+    color: #ffffff;
+    font-size: 16px;
+    right: 400px;
+    top: 200px;
+   
+    font-size: 26px;
+}
+#Suavitelmenu{
+    position:absolute;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 50px 0px 35px 0px;
+    -moz-border-radius: 35px 0px 35px 0px;
+    -webkit-border-radius: 35px 0px 35px 0px;
+    border: 2px solid #ffffff;
+    background-color: cadetblue;
+    font-family: sans-serif;
+    color: #ffffff;
+    font-size: 16px;
+    right: 400px;
+    top: 200px;
+   
+    font-size: 26px;
+}
+#Arielmenu{
+    position:absolute;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 50px 0px 35px 0px;
+    -moz-border-radius: 35px 0px 35px 0px;
+    -webkit-border-radius: 35px 0px 35px 0px;
+    border: 2px solid #ffffff;
+    background-color: cadetblue;
+    font-family: sans-serif;
+    color: #ffffff;
+    font-size: 16px;
+    right: 400px;
+    top: 200px;
+   
+    font-size: 26px;
+}
+#Cloroxmenu{
+    position:absolute;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 50px 0px 35px 0px;
+    -moz-border-radius: 35px 0px 35px 0px;
+    -webkit-border-radius: 35px 0px 35px 0px;
+    border: 2px solid #ffffff;
+    background-color: cadetblue;
+    font-family: sans-serif;
+    color: #ffffff;
+    font-size: 16px;
+    right: 400px;
+    top: 200px;
+   
+    font-size: 26px; 
+}
+#Acemenu{
+    position:absolute;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 50px 0px 35px 0px;
+    -moz-border-radius: 35px 0px 35px 0px;
+    -webkit-border-radius: 35px 0px 35px 0px;
+    border: 2px solid #ffffff;
+    background-color: cadetblue;
+    font-family: sans-serif;
+    color: #ffffff;
+    font-size: 16px;
+    right: 400px;
+    top: 200px;
+   
+    font-size: 26px; 
+}
+#menuotro{
+    position:absolute;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 50px 0px 35px 0px;
+    -moz-border-radius: 35px 0px 35px 0px;
+    -webkit-border-radius: 35px 0px 35px 0px;
+    border: 2px solid #ffffff;
+    background-color: cadetblue;
+    font-family: sans-serif;
+    color: #ffffff;
+    font-size: 16px;
+    right: 400px;
+    top: 200px;
+   
+    font-size: 26px; 
+}

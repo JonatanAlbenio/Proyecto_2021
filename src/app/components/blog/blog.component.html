@@ -1,0 +1,202 @@
+
+
+<select  [(ngModel)]="partidad" id="menuf" name="Menu"  >
+   
+    <option>Elija una opcion</option>
+    <option  value ="1">1.Producto a registrar /</option>
+    <option  value="2">2.VerResutaldo Final</option>
+
+</select>
+
+<span  [ngSwitch]="partidad" >
+<span  *ngSwitchCase="'1'">
+    <select id="menuS" [(ngModel)]="segundo">
+
+        <option value="detergente">Detergente</option>
+        <option value="suavitel">Suavitel</option>
+        <option value="Ariel">Ariel </option>
+        <option value="Clorox">Clorox</option>
+        <option value="ACE">ACE</option>
+        <option value ="Ninguno">Ninguno</option>
+
+                    
+    </select>
+
+        <span [ngSwitch]="segundo">
+                      
+           
+            <span *ngSwitchCase="'Ningundo'">Ningundo</span>
+            
+            
+            <span id="Detergentemenu" *ngSwitchCase="'detergente'">Venta del Dia Detergente <input id="detergente" type="number"[(ngModel)]="stockD"><br>
+             
+            Valor Unitario<input type="number" [(ngModel)]="valorUnitarioD"><br>
+
+            <p *ngIf="pasoD(); else incorrecto">Datos Completos.....</p>
+
+            <ng-template #incorrecto><p>Datos Incompletos o Datos Negativos </p></ng-template>
+           
+            </span>
+
+            
+
+            
+            <span  id="Suavitelmenu" *ngSwitchCase="'suavitel'">Venta del dia Suavitel <input id="suavitel" type="number"[(ngModel)]="stockS"><br>
+                Valor unitario<input type ="number" [(ngModel)]="valorunitarios"><br>
+               
+
+                
+               
+                <p *ngIf="pasoS(); else incorrecto">DatosCorrectos</p>
+          
+        <ng-template #incorrecto><p>Datos Incompletos o Datos Negativos </p></ng-template>
+
+             </span>
+
+             <span  id="Arielmenu" *ngSwitchCase="'Ariel'">Venta del dia Ariel <input id="Ariel" type="number"[(ngModel)]="StockAriel"><br>
+                Valor unitario<input type ="number" [(ngModel)]="ValorunitarioAriel"><br>
+               
+
+                
+               
+                <p *ngIf="pasoAriel(); else incorrecto">DatosCorrectos</p>
+          
+        <ng-template #incorrecto><p>Datos Incompletos o Datos Negativos </p></ng-template>
+             </span>
+                   
+            
+             <span  id="Cloroxmenu" *ngSwitchCase="'Clorox'">Venta del dia Clorox <input id="Clorox" type="number"[(ngModel)]="stockClorox"><br>
+                Valor unitario<input type ="number" [(ngModel)]="valorunitarioClorxo"><br>
+               
+
+                
+               
+                <p *ngIf="pasoclorox(); else incorrecto">DatosCorrectos</p>
+          
+        <ng-template #incorrecto><p>Datos Incompletos o Datos Negativos </p></ng-template>
+             </span>
+
+             <span  id="Acemenu" *ngSwitchCase="'ACE'">Venta del dia Ace<input id="Ace" type="number"[(ngModel)]="stockAce"><br>
+                Valor unitario<input type ="number" [(ngModel)]="valorunitarioAce"><br>
+               
+
+                
+               
+                <p *ngIf="pasoAce(); else incorrecto">DatosCorrectos</p>
+          
+        <ng-template #incorrecto><p>Datos Incompletos o Datos Negativos </p></ng-template>
+             </span>
+                   
+
+        </span>
+
+
+</span>
+
+<span id="menuotro" *ngSwitchCase="'2'">
+
+  <select id="menuotro3" [(ngModel)]="resultado">
+
+    <option value="detergentef">Detergente Resultado </option><br>
+    <option value="SuavitelR">Suavitel Resultado </option>
+    <option value="ArielR">Ariel Resultado</option>
+    <option value="Clorox">Clorox Resultado</option>
+    <option value="ACE">ACE RESULTADO</option>
+    <option value="Volver">Volver</option>
+    
+
+  </select>
+    <span [ngSwitch]="resultado"><br>
+        <p *ngIf="pasoD(); else incorrecto">
+        <span id="detergenter" *ngSwitchCase="'detergentef'">Total de costo logrado: {{valorUnitarioD*stockD}}
+
+
+            <p> Stock Inicial detergente: {{stockI}}</p>
+            <p>Stock Total de Detergentes: {{stockd()}}</p>
+            <p>Total maximo de productos vendidos :{{stockD}}</p>
+            <p>Stock total en pesos:{{stockP()}}</p>
+
+        </span><br>
+           
+     </p>
+
+        <ng-template #incorrecto><p>Datos Incompletos Detergente</p></ng-template>
+    </span>
+
+    <span [ngSwitch]="resultado"><br>
+        <p *ngIf="pasoS(); else incorrecto2">
+        <span *ngSwitchCase="'SuavitelR'">Total de costo logrado: {{valorunitarios*stockS}}
+
+
+            <p> Stock Inicial Suavitel: {{stocksIs}}</p>
+            <p>Stock Total de Suavitel: {{stockSf()}}</p>
+            <p>Total maximo de productos vendidos :{{stockS}}</p>
+            <p>Stock total en pesos:{{stockSp()}}</p>
+
+        </span><br>
+           
+     </p>
+
+        <ng-template #incorrecto2><p>Datos Incompletos Suavitel </p></ng-template>
+    </span>
+    
+    <span [ngSwitch]="resultado"><br>
+        <p *ngIf="pasoAriel(); else incorrecto3">
+        <span *ngSwitchCase="'ArielR'">Total de costo logrado: {{ValorunitarioAriel*StockAriel}}
+
+
+            <p> Stock Inicial Ariel: {{stockInicialAriel}}</p>
+            <p>Stock Total de  Ariel: {{stockAriel()}}</p>
+            <p>Total maximo de productos vendidos :{{StockAriel}}</p>
+            <p>Stock total en pesos:{{stockAriell()}}</p>
+
+        </span><br>
+           
+     </p>
+
+        <ng-template #incorrecto3><p>Datos Incompletos Ariel </p></ng-template>
+    </span>
+
+
+    <span [ngSwitch]="resultado"><br>
+        <p *ngIf="pasoclorox(); else incorrecto4">
+        <span *ngSwitchCase="'Clorox'">Total de costo logrado: {{ valorunitarioClorxo*stockClorox}}
+
+
+            <p> Stock Inicial Clorox: {{stockinicialClorox}}</p>
+            <p>Stock Total de Clorox: {{ stockClorox1()}}</p>
+            <p>Total maximo de productos vendidos :{{stockClorox}}</p>
+            <p>Stock total en pesos:{{stockcloroxx2()}}</p>
+
+        </span><br>
+           
+     </p>
+
+        <ng-template #incorrecto4><p>Datos Incompletos Clorox </p></ng-template>
+    </span>
+    <span [ngSwitch]="resultado"><br>
+        <p *ngIf="pasoAce(); else incorrecto6">
+        <span *ngSwitchCase="'ACE'">Total de costo logrado: {{ valorunitarioAce*stockAce}}
+
+
+            <p> Stock Inicial Ace: {{stockinicialAce}}</p>
+            <p>Stock Total de Ace: {{ stockAcce()}}</p>
+            <p>Total maximo de productos vendidos :{{ stockAce}}</p>
+            <p>Stock total en pesos:{{stockAcce2()}}</p>
+
+        </span><br>
+           
+     </p>
+
+        <ng-template #incorrecto6><p>Datos Incompletos Clorox </p></ng-template>
+    </span>
+
+
+
+</span>
+    
+
+
+
+</span>
+

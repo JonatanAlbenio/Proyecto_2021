@@ -1,0 +1,65 @@
+<form>
+
+    <div id="Nombrep">
+        <label for ="nombre"> Nombre:
+        </label>
+        <input type ="text" name = "nombre" [(ngModel)]="usuario.nombre" />
+     
+
+    </div>
+    <div id="apellido">
+        <label for ="Apellido"> Apellido:
+        </label>
+        <input type ="text" name = "Apellido" [(ngModel)]="usuario.apellido" />
+     
+
+    </div>
+    <div id="Edad">
+        <label for ="edad"> Edad:
+        </label>
+        <input type ="text" name = "edad" [(ngModel)]="usuario.edad" />
+     
+
+    </div>
+    <div id="Algebra">
+        <label for ="Algebra"> Algebra:
+        </label>
+        <input type ="number" name = "Algebra" [(ngModel)]="usuario.algebra" [(ngModel)]="suma2" />
+     
+
+    </div>
+    <div id="Quimica">
+        <label for ="quimica"> Quimica:
+        </label>
+        <input type ="number" name = "quimica" [(ngModel)]="usuario.quimica" [(ngModel)]="suma" />
+     
+
+    </div>
+    <div id="Fisica">
+        <label for ="Fisica"> Fisica :
+        </label>
+        <input type ="number" name = "Fisica" [(ngModel)]="usuario.fisica" [(ngModel)]="suma3" />
+     
+
+    </div>
+    
+        <h1 id="datos">Resultado</h1>
+
+       <p id="Nombre1">
+           Nombre : {{usuario.nombre}}
+       </p>
+
+       <p id="apellido1">
+      Apellido : {{usuario.apellido}}
+    </p>
+
+    <p id ="edad1"> Edad : {{edad()}}</p>
+    <p id ="algebra1"> Algebra : {{materia()}}</p>
+    <p id ="Quimica1"> Quimica : {{quimica()}}</p>
+    <p id ="fisica1"> Fisica : {{fisica()}}</p>
+   
+    <p id ="tanteo">: {{ calculo()}}</p>
+
+</form>
+
+
